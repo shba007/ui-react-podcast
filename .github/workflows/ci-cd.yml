@@ -6,8 +6,6 @@ on:
 
   workflow_dispatch:
 
-env:
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

@@ -6,9 +6,6 @@ on:
 
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build:
     name: Build
@@ -47,7 +44,7 @@ jobs:
       - name: Build project
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
 
-   deploy:
+  deploy:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest

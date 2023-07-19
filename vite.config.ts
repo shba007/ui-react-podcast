@@ -5,5 +5,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: '/prop-accel-hiring/'
+  base: '/ui-react-podcast/'
 })

@@ -1,2 +1,2 @@
-This Project is made with React + Typescript and Tailwind CSS
-
+# UI React - Podcast
+UI of a podcast website site in React + Typescript + Tailwind CSS

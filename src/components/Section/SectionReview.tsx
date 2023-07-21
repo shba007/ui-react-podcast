@@ -19,10 +19,16 @@ const splideOption: Options = {
     pagination: 'pagination',
     page: 'pagination-page',
   },
-  padding: '11rem',
+  padding: '2rem',
   gap: '2rem',
   trimSpace: true,
   autoWidth: true,
+  breakpoints: {
+    640: {
+      padding: '1rem',
+      gap: '3rem',
+    },
+  },
 };
 
 export default function SectionReview() {
@@ -75,9 +81,12 @@ export default function SectionReview() {
   ];
 
   return (
-    <section id="review" className="flex flex-col gap-6 h-screen">
-      <h2 className="text-4xl font-bold">Review from customers</h2>
-      <h3 className="max-w-[400px] text-xs font-[Poppins]">
+    <section
+      id="review"
+      className="flex flex-col gap-4 md:gap-6 sm:mr-auto sm:w-4/5 lg:w-full md:min-h-screen"
+    >
+      <h2 className="text-2xl md:text-4xl font-bold">Review from customers</h2>
+      <h3 className="max-w-[400px] text-base md:text-lg font-[Poppins]">
         Check out of some unbiased Reviews, Ratings & Recommendations from the
         Real Users
       </h3>
@@ -99,20 +108,20 @@ export default function SectionReview() {
               </SplideSlide>
             ))}
           </SplideTrack>
-          <div className="splide__arrows absolute flex justify-between left-1/2 -translate-x-1/2 -translate-y-52 w-[70%]">
+          <div className="splide__arrows absolute flex justify-between left-1/2 -translate-x-1/2 -translate-y-44 w-[95%] md:w-[80%]">
             <button
               className={`splide__arrow splide__arrow--prev p-1 bg-[#E1A6FF]/40 hover:bg-[#E1A6FF] transition-colors duration-200 rounded-full ${
                 slideState === 'first' ? 'invisible' : 'visible'
               }`}
             >
-              <ArrowIcon />
+              <ArrowIcon className="w-8 h-8" />
             </button>
             <button
-              className={`splide__arrow splide__arrow--next transform rotate-180 p-1 bg-[#E1A6FF]/40 hover:bg-[#E1A6FF] transition-colors duration-200 rounded-full ${
+              className={`splide__arrow splide__arrow--next transform rotate-180 p-1 bg-[#E1A8FF]/40 hover:bg-[#E1A6FF] transition-colors duration-200 rounded-full ${
                 slideState === 'last' ? 'invisible' : 'visible'
               }`}
             >
-              <ArrowIcon />
+              <ArrowIcon className="w-8 h-8" />
             </button>
           </div>
         </Splide>

@@ -12,18 +12,21 @@ import { ReactComponent as DotGridImage } from '../../assets/images/dot-grid.svg
 
 export default function SectionHero() {
   return (
-    <section id="hero" className="flex text-lg text-white">
-      <div className="w-1/2">
-        <h1 className="text-4xl leading-snug font-bold max-w-[580px]">
-          Learn How to Launch a Successful Podcast
+    <section
+      id="hero"
+      className="flex flex-col gap-20 md:gap-0 md:flex-row text-lg text-white"
+    >
+      <div className="mx-auto flex flex-col items-center md:items-start px-2 sm:w-full md:w-1/2">
+        <h1 className="max-w-[580px] text-center md:text-left text-2xl sm:text-4xl leading-snug font-bold">
+          Learn How to Launch a <br /> Successful Podcast
         </h1>
-        <p className="mt-6 mb-20 max-w-[433px] text-lg leading-relaxed">
+        <p className="mt-6 mb-14 md:mb-20 max-w-[433px] text-center md:text-left text-base sm:text-lg leading-relaxed">
           Master content planning, sound quality, engaging delivery, interviews,
           promotion, and analytics for podcast success.
         </p>
         <CTAButton>Sign Up Now</CTAButton>
       </div>
-      <div className="relative left-8 grid grid-rows-5 grid-cols-11 w-1/2">
+      <div className="relative grid grid-rows-5 grid-cols-11 mx-auto w-[90%] md:w-1/2">
         <DotGridImage className="row-start-2 row-span-4 col-start-2 col-span-9 translate-x-[10%] -z-10" />
         <img
           src={HeroImage_2}
@@ -33,8 +36,8 @@ export default function SectionHero() {
           src={HeroImage_1}
           className="row-start-2 row-span-4 col-start-1 col-span-9 rounded-[10px] aspect-[7/4] object-cover"
         />
-        <PodCastIcon className="absolute -right-[4.5rem] bottom-[6.5rem] scale-[80%] -rotate-[16.83deg]" />
-        <MicrophoneIcon className="absolute -right-6 -bottom-10 scale-[80%] rotate-[15.14deg]" />
+        <PodCastIcon className="absolute -right-[4.5rem] bottom-[6.5rem] scale-[60%] md:scale-[80%] -rotate-[16.83deg]" />
+        <MicrophoneIcon className="absolute -right-6 -bottom-10 scale-[60%] md:scale-[80%] rotate-[15.14deg]" />
       </div>
     </section>
   );

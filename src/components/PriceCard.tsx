@@ -11,14 +11,14 @@ export default function PriceCard({
 }) {
   return (
     <div
-      className={`flex flex-col gap-6 max-w-[303px] border-[0.5px] border-[#7A3199] rounded-[10px] px-7 py-9 ${
-        isActive ? 'bg-[#7A3199] text-white scale-110' : 'bg-white'
+      className={`flex flex-col gap-6 my-6 border-[0.5px] border-[#7A3199] rounded-[10px] px-7 py-9 max-w-[303px] h-[378px] md:h-fit ${
+        isActive ? 'bg-[#7A3199] text-white md:scale-110' : 'bg-white'
       }`}
     >
       <div className="flex flex-col gap-4">
         <h6 className="font-bold">{name} Plan</h6>
         <p className="text-xs font-['Poppins']">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+          {name} Plan Comes with the followings
         </p>
       </div>
       <div

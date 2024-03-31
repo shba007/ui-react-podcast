@@ -1,8 +1,7 @@
 import { useState } from 'react';
 
 import ReviewCard from '../ReviewCard';
-// @ts-ignore
-import { ReactComponent as ArrowIcon } from '../../assets/icons/arrow.svg';
+import ArrowIcon from '../../assets/icons/arrow.svg?react';
 
 import {
   Splide,

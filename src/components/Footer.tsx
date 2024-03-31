@@ -1,11 +1,7 @@
-// @ts-ignore
-import { ReactComponent as Facebook } from '../assets/icons/facebook.svg';
-// @ts-ignore
-import { ReactComponent as Youtube } from '../assets/icons/youtube.svg';
-// @ts-ignore
-import { ReactComponent as Instagram } from '../assets/icons/instagram.svg';
-// @ts-ignore
-import { ReactComponent as Twitter } from '../assets/icons/twitter.svg';
+import Facebook from '../assets/icons/facebook.svg?react';
+import Youtube from '../assets/icons/youtube.svg?react';
+import Instagram from '../assets/icons/instagram.svg?react';
+import Twitter from '../assets/icons/twitter.svg?react';
 
 export default function Footer() {
   return (
@@ -24,7 +20,7 @@ export default function Footer() {
       <span className="max-w-[7rem] leading-relaxed">
         All Right Reserved @Copyright 2023
       </span>
-      <ul className="flex flex-col flex-wrap md:flex-row gap-2 md:gap-4 max-h-16 -translate-x-full md:translate-x-0">
+      <ul className="flex flex-col flex-wrap md:flex-row gap-2 md:gap-4 max-h-16 -translate-x-1/2 md:translate-x-0">
         <li>
           <a href="https://www.facebook.com" target="_blank">
             <Facebook />

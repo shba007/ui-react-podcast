@@ -1,7 +1,5 @@
-// @ts-ignore
-import { ReactComponent as HeroBgFirstImage } from './assets/images/hero-first.svg';
-// @ts-ignore
-import { ReactComponent as HeroBgLastImage } from './assets/images/hero-last.svg';
+import HeroBgFirstImage from './assets/images/hero-first.svg?react';
+import HeroBgLastImage from './assets/images/hero-last.svg?react';
 
 import NavBar from './components/Navbar';
 import SectionHero from './components/Section/SectionHero';

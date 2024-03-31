@@ -3,12 +3,9 @@ import HeroImage_2 from '../../assets/images/image-2.jpg';
 
 import CTAButton from '../CTAButton';
 
-// @ts-ignore
-import { ReactComponent as PodCastIcon } from '../../assets/icons/podcast.svg';
-// @ts-ignore
-import { ReactComponent as MicrophoneIcon } from '../../assets/icons/microphone.svg';
-// @ts-ignore
-import { ReactComponent as DotGridImage } from '../../assets/images/dot-grid.svg';
+import PodCastIcon from '../../assets/icons/podcast.svg?react';
+import MicrophoneIcon from '../../assets/icons/microphone.svg?react';
+import DotGridImage from '../../assets/images/dot-grid.svg?react';
 
 export default function SectionHero() {
   return (

@@ -9,8 +9,7 @@ import {
   // @ts-ignore
 } from '@splidejs/react-splide';
 
-// @ts-ignore
-import { ReactComponent as PodCastBgImage } from '../../assets/images/podcast.svg';
+import PodCastBgImage from '../../assets/images/podcast.svg?react';
 
 const splideOption: Options = {
   arrows: false,

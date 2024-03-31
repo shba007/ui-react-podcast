@@ -1,5 +1,4 @@
-// @ts-ignore
-import { ReactComponent as Star } from '../assets/icons/star.svg';
+import Star from '../assets/icons/star.svg?react';
 
 export default function ReviewCard({
   image,
